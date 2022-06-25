@@ -1,0 +1,42 @@
+.my-work {
+  background-color: var(--clr-accentOpecFull);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__title--work {
+  color: var(--clr-accent);
+}
+
+.my-work h2 {
+  padding: .7em 0;
+}
+
+.portfolio {
+  padding: .7em .5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__item {
+  display: flex;
+  /* padding: 1.25em; */
+  overflow: hidden;
+}
+
+.portfolio__img {
+  transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+  opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img {
+  transform: scale(1.2);
+  opacity: .5;
+}

@@ -1,0 +1,26 @@
+.port-link {
+  color: var(--clr-light);
+  text-decoration: none;
+}
+
+.port-bio {
+  text-align: center;
+  font-size: var(--fs-h3);
+  width: 70%;
+  margin: auto;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+ .port-links {
+   text-align: center;
+   padding-bottom: 2em;
+ }
+
+.port-link-btn {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.port-page-gal {
+  cursor: default;
+}

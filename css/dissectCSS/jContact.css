@@ -1,0 +1,12 @@
+.contact-wrapper {
+  text-align: center;
+  padding: 2em 0;
+  background-image: url("../../img/ubuntu0.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--clr-light);
+}
+
+.contactTitle {
+  padding: 1em;
+}

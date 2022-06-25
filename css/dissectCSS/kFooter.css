@@ -1,0 +1,59 @@
+.foot {
+  flex: 1;
+  color: white;
+  text-align: center;
+  height: 150px;
+  padding-top: 1rem;
+  padding-bottom: 20px;
+  background: var(--clr-dark);
+}
+
+.foot p {
+  padding-top: 40px;
+  margin: 0;
+}
+
+.social {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.social img {
+  height: 50px;
+  margin-top: 20px;
+}
+
+.social img:hover {
+  cursor: pointer;
+  border-radius: 8px;
+  background: var(--clr-light);
+}
+
+.copyright {
+  font-size: 11px;
+}
+
+#github:hover {
+  border-radius: 50% !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,10 @@
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.about-me__img {
+  box-shadow: var(--bs);
+  background-color: var(--clr-accentOpecMid);
+}
