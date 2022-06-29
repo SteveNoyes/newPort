@@ -12,7 +12,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/favi.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- <link rel="icon" type="image/png" href="/img/favi.png"> -->
   <link rel="stylesheet" href="css.reset.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Steven Noyes</title>
@@ -20,8 +27,8 @@
 </head>
 
 <body>
-
-  <!-- Nav Bar -->
+  <!-- header -->
+    <!-- Nav Bar -->
   <header>
     <div class="logo">
       <h3><a href="index.html" class="logo">< / ></a></h3>
@@ -31,30 +38,32 @@
     </button>
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">home</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">my work</a></li>
-        <li class="nav__item"><a href="#blog" class="nav__link">blog</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">contact me</a></li>
+        <a href="#home" class="nav__link"><li class="nav__item">home</li></a>
+        <a href="#about" class="nav__link"><li class="nav__item">about</li></a>
+        <a href="#work" class="nav__link"><li class="nav__item">my work</li></a>
+        <a href="#blog" class="nav__link"><li class="nav__item">blog</li></a>
+        <a href="#contact" class="nav__link"><li class="nav__item">contact me</li></a>
       </ul>
     </nav>
   </header>
 
   <!-- Intro -->
   <section class="intro" id="home">
-    <h1 class="section__title section__title--intro"><span class="italicFont">Hi, I am </span><strong>Steven Noyes</strong></h1>
-    <p class="section__subtitle section__subtitle--intro">front end web developer</p>
-    <img src="img/intro__img.jpg" alt="" class="intro__img">
+    <div class="infoWrapper">
+      <h1 class="section__title section__title--intro"><span class="italicFont">Hi, I am </span><strong>Steven Noyes</strong></h1>
+      <p class="section__subtitle section__subtitle--intro">front end web developer</p>
+    </div>
+    <img src="img/intro__img__effect.jpg" alt="" class="intro__img">
   </section>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">go to top</button>
 
   <section class="my-services">
     <h2 class="section__title section__title--services">What I do</h2>
     <div class="services">
       <div class="service">
         <h3>Design & Develop</h3>
-        <p>Fast load times and lag free interaction. Websites don't have to be static, I love making pages come to life.</p>
+        <p>Websites don't have to be boring, I love transforming concepts into prototypes for testing, and improving methodologies and components.</p>
       </div>
       <div class="service">
         <h3>Responsive</h3>
@@ -75,7 +84,7 @@
       <p>I am a web developer with experience in customization and deployment of HTML, CSS, and JavaScript. I have a heavy focus on user experience and my aim is to produce professional applications that are highly functional.</p>
       <p>As a freelance web developer I have collaborated with graphic designers, at the same time maintaining clients and working with their development teams.</p>
     </div>
-    <img src="img/aboutMe__image.jpg" class="about-me__img" alt="">
+    <img src="img/about__img.jpg" class="about-me__img" alt="">
   </section>
 
 
@@ -132,10 +141,10 @@
      <form method="post" class="contactForm" name="contact_form"
  action="contact.php">
        <label for="name">Name:</label>
-       <input type="text" class="nameInput" name="name" placeholder="John Smith" required>
+       <input type="text" class="nameInput" name="name" required>
        <br>
        <label for="email">Email:</label>
-       <input type="text" class="emailInput" name="email" required pattern="(.+)@(.+){1,}\.(.+){2,}" placeholder="johnsmith@mail.com">
+       <input type="text" class="emailInput" name="email" required pattern="(.+)@(.+){1,}\.(.+){2,}">
        <br>
        <label for="message">Message:</label>
        <br>
@@ -150,20 +159,20 @@
     <div class="foot" id="footer">
       <div class="social tooltip">
         <a href="https://www.linkedin.com/in/steven-noyes/" target="_blank">
-          <img src="/img/linkedin.svg" alt="linkedin">
+          <img src="/img/linkedIcon.png" alt="linkedin">
         </a>
       </div>
       <div class="social tooltip">
         <a href="https://twitter.com/StevenMNoyes" target="_blank">
-        <img src="/img/twitter.svg" alt="twitter">
+        <img src="/img/twitterIcon.png" alt="Twitter Icon">
       </a>
       </div>
       <div class="social tooltip">
         <a href="https://github.com/SteveNoyes" target="_blank">
-        <img src="/img/github.svg" alt="github" id="github">
+        <img src="/img/githubIcon.png" alt="github" id="github">
       </a>
       </div>
-      <p class="copyright">Steven Noyes &copy; 2022</p>
+      <p class="copyright">Steven Noyes &copy; <span id="dateUpdate"></span></p>
     </div>
 
   </footer>

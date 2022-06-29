@@ -6,7 +6,6 @@ header {
 }
 
 .logo {
-  border: 1px solid red;
   font-weight: var(--fw-bold);
   font-size: var(--fs-h3);
   color: var(--clr-secondary);
@@ -15,13 +14,14 @@ header {
 
 .nav {
   position: fixed;
-  background: var(--clr-accent);
+  background: var(--clr-accentOpecLite);
   color: var(--clr-light);
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  height: 100%;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -29,12 +29,21 @@ header {
 .nav__list {
   list-style: none;
   display: flex;
-  height: 100%;
+  height: 50%;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 5rem;
+}
+
+.nav__item {
+  text-align: center;
+}
+
+.nav__item:hover {
+  cursor: pointer;
+  background-color: var(--clr-accentOpecLite);
 }
 
 .nav__link {
@@ -42,10 +51,7 @@ header {
   font-weight: var(--fw-bold);
   font-size: var(--fs-h2);
   text-decoration: none;
-}
-
-nav__link:hover {
-  color: var(--clr-accentOpecMid);
+  width: 100%;
 }
 
 .nav-toggle {

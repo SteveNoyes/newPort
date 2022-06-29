@@ -31,5 +31,5 @@ h3 { font-size: var(--fs-h3) }
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }

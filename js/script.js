@@ -11,7 +11,6 @@ navLinks.forEach(link => {
   })
 })
 
-
 var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -30,3 +29,10 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+// Updating the date at in the footer with new Date() function
+
+const newDate = new Date();
+let year = newDate.getFullYear();
+document.getElementById("dateUpdate").innerHTML = year;

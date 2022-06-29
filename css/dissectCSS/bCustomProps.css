@@ -5,7 +5,8 @@
 
   /* font weight */
   --fw-reg: 300;
-  --fw-bold: 900;
+  --fw-mid: 400;
+  --fw-bold: 500;
 
   /* Spot Palette based off of #1D3557 */
   /* color variables */
@@ -15,6 +16,7 @@
   --clr-secondary: #D9A21B;
   --clr-lite-brown: #877455;
   --clr-dark-brown: #423211;
+  --clr-accentOpecLite: rgba(29, 53, 87, 0.9);
   --clr-accentOpecMid: rgba(29, 53, 87, 0.6);
   --clr-accentOpecFull: rgba(29, 53, 87, 0.3);
 

@@ -25,17 +25,12 @@
 
 .social img:hover {
   cursor: pointer;
-  border-radius: 8px;
-  background: var(--clr-light);
 }
 
 .copyright {
   font-size: 11px;
 }
 
-#github:hover {
-  border-radius: 50% !important;
-}
 
 .tooltip {
   position: relative;

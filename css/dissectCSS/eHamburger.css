@@ -27,7 +27,7 @@
 .hamburger::before,
 .hamburger::after {
   background: var(--clr-light);
-  width: 2em;
+  width: 1.4em;
   height: 3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
@@ -44,7 +44,3 @@
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
-.nav-toggle {
-  border: 1px solid red;
-}
