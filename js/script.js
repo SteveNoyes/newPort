@@ -1,6 +1,7 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
+
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
 });
@@ -29,7 +30,6 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
 
 // Updating the date at in the footer with new Date() function
 

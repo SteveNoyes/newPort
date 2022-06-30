@@ -1,7 +1,8 @@
 /* Media Queries  */
 
 /* Tablet */
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+
   #myBtn {
     padding: 15px;
   }
@@ -71,6 +72,31 @@
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
+
+  /* Nav Bar */
+  .nav {
+    float: right;
+    display: inline;
+  }
+
+  .logo {
+    float: left;
+  }
+
+  .nav__item {
+    display: inline;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+
+  /* Services */
 
   .services {
     display: flex;

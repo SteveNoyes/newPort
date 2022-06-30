@@ -20,6 +20,7 @@
 .section__subtitle--intro {
   display: inline-block;
   color: var(--clr-light);
+  border-radius: 8px;
 }
 
 .italicFont {
